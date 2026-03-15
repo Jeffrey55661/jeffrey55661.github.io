@@ -1,0 +1,178 @@
+/* RESET & BASE */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: #0f172a;
+  color: #e5e7eb;
+  line-height: 1.8;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10%;
+  background: #020617;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+header h1 {
+  color: #38bdf8;
+  font-size: 32px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  transition: 0.3s;
+  font-size: 16px;
+}
+
+nav a:hover {
+  color: #38bdf8;
+}
+
+/* HERO SECTION LEFT-ALIGNED */
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+  overflow: hidden;
+  text-align: left;
+  padding-left: 10%;
+}
+
+.hero h2 {
+  font-size: 80px;
+  font-weight: 700;
+}
+
+.hero h3 {
+  font-size: 48px;
+  margin-top: 15px;
+}
+
+.hero span {
+  color: #38bdf8;
+}
+
+.hero p {
+  margin-top: 15px;
+  max-width: 600px;
+  font-size: 20px;
+}
+
+/* PARTICLES */
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.hero h2,
+.hero h3,
+.hero p,
+.hero a {
+  position: relative;
+  z-index: 1;
+}
+
+/* BUTTONS */
+.btn {
+  display: inline-block;
+  width: auto;
+  padding: 10px 16px;
+  background: #38bdf8;
+  color: #020617;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
+  white-space: nowrap;
+  transition: background 0.3s;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #0ea5e9;
+}
+
+/* PROJECTS SECTION LEFT-ALIGNED */
+section {
+  padding: 80px 10%;
+  text-align: left;
+  font-size: 18px;
+}
+
+/* GRID PROJECT CARDS */
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.card {
+  background: #020617;
+  padding: 25px;
+  border-radius: 10px;
+  transition: 0.3s;
+  text-align: left;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h3 {
+  color: #38bdf8;
+  margin-bottom: 10px;
+  font-size: 22px;
+}
+
+/* CONTACT & FOOTER */
+footer {
+  text-align: left;
+  padding: 30px 10%;
+  background: #020617;
+  font-size: 18px;
+}
+
+.typing-line {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.typing-line h3 {
+  font-size: 48px;
+  margin: 0;
+}
+
+#typing::after {
+  content: "|";
+  animation: blink 1s infinite;
+  margin-left: 5px;
+}
+
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
